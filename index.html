@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/index.css">
+    <link rel="stylesheet" type="text/css" href="/navbar.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicon Logo -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/asset/logo.png">
+    <title>LA’FLEUR Bouquet</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <h1>La'Fleuer</h1>
+            </div>
+            <div class="checkbox-navbar">
+                <input type="checkbox" id="hamburger-checkbox">
+                <label for="hamburger-checkbox" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul style="list-style-type: none;">
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#services  "><li>Service</li></a>
+                    <a href="#produk"><li>Products</li></a>
+                    <a href="#daftar"><li>Our Clients</li></a>
+                </ul>
+            </div>
+            </nav>
+<!-- Header Section -->
+            <div class="hero" id="home">
+                <div class="container">
+                  <div class="box-hero">
+                    <div class="box">
+                      <h1>
+                        <span style="color: #0050b3; font-size: 30x;">LA’FLEUR</span><br/>
+                        Bouquet<span style="color: #b6b6b6; font-size: 30x;"></span>
+                      </h1>
+                      <p>Fleur sendiri berasal dari bahasa prancis,
+                        yang artinya bunga. jadi la’fleur bouquet jika
+                        dibahasa indonesiakan artinya buket bunga</p>
+                      <a href="#services"><button>Selengkapnya</button></a>
+                      
+                    </div>
+                    <div class="box">
+                      <img src="/asset/logo.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </header>
+<!-- Whatsapp Floating -->
+<div id="whatsapp">
+    <a href="https://wa.me/+6287765807475?text=I'm%20interested%20in%20your%20Bouquet%20product%20" target="_blank" id="toogle1" class="wtsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
+<!-- Tiktok Floating -->
+<div id="tiktok">
+  <a href="https://wa.me/+6287765807475?text=I'm%20interested%20in%20your%20Bouquet%20product%20" target="_blank" id="toogle1" class="tt">
+    <i class='bx bxl-tiktok'></i>
+  </a>
+</div>
+<!-- Instagram Floating -->
+<div id="instagram">
+  <a href="https://www.instagram.com/la_fleur.bouquet/" target="_blank" id="toogle1" class="ig">
+    <i class='bx bxl-instagram'></i>
+  </a>
+</div>
+<!-- Services -->
+<div class="services" id="services">
+    <div class="container">
+      <div class="box-services">
+        <div class="box">
+          <i class='bx bx-wallet'></i>
+          <h4>Harga Terjangkau</h4>
+          <p>Harga Terjangkau Semua Kalangan Masyarakat</p>
+        </div>
+        <div class="box">
+          <i class='bx bxs-check-shield'></i>
+          <h4>Sudah Tersertifikasi</h4>
+          <p>Menggunakan Bahan berkualitas No 1</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-people-roof"></i>
+          <h4>Aman dan Ramah</h4>
+          <p> Dan Hasil Terbaik</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services -->
+  <!-- popup section -->
+  <div id="popupBatik" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeBatikPopup()">&times;</span>
+        <h2>Detail Bucket</h2>
+        <img src="" alt="" id="popupImage">
+        <h3 id="popupBatikTitle"></h3>
+        <p id="popupBatikDescription"></p>
+    </div>
+</div>
+
+  <!-- Batik -->
+  <div class="batik" id="produk">
+    <div class="container">
+        <div class="box-batik">
+          <div class="box">
+            <img src="/asset/buket9.jpg" alt="">
+            <h3>Bucket Wisuda</h3>
+            <p>Start From 50k</p>
+            <button class="btn-popup" onclick="openBatikPopup('Bucket Wisuda','Harga Yang Terjangkau,Nyaman Di Genggam Menggunakan Bahan Yang Ramah Lingkungan', '/asset/buket9.jpg')">Details</button>
+        </div>
+        <div class="box">
+                <img src="/asset/buket7.jpg" alt="">
+                <h3>Bucket Snack</h3>
+                <p>Start from 25k</p>
+                <button class="btn-popup"  onclick="openBatikPopup('Bucket Snack', 'Harga Yang Terjangkau,Menghadirkan Snack Yang Bervariasi Dan Mudah Disajikan Dalam Pertemuan', '/asset/buket7.jpg')">Details</button>
+            </div>
+            <div class="box">
+                <img src="/asset/buket8.jpg" alt="">
+                <h3>Bucket Custom</h3>
+                <p>Start from 25k
+                </p>
+                <button class="btn-popup" onclick="openBatikPopup('Bucket Custom', 'Bucket custom Bucket yang dibuat dengan request pembeli','/asset/buket8.jpg')">Details</button>
+            </div>
+            <div class="box">
+                <img src="/asset/buket10.jpg" alt="">
+                <h3>Bucket Fresh Flowers</h3>
+                <p>Start from 25k</p>
+                <button class="btn-popup"  onclick="openBatikPopup('Bucket Fresh Flowers ', 'Menghadirkan Bunga Yang Baru Dipetik & Aroma Yang Fresh  ', '/asset/buket10.jpg')">Details</button>
+            </div>
+            <div class="box">
+                <img src="/asset/buket6.jpg" alt="">
+                <h3>Bucket Uang</h3>
+                <p>Start From 25k</p>
+                <button class="btn-popup"  onclick="openBatikPopup('Bucket Uang', 'Bucket yang  biasanya didalam nya ada uang untuk diberikan sebagai hadiah ', '/asset/buket6.jpg')">Details</button>
+            </div>
+            <div class="box">
+                <img src="/asset/buket11.jpg" alt="">
+                <h3>Bucket Mini</h3>
+                <p>Start From 25k</p>
+                <button class="btn-popup"  onclick="openBatikPopup('Bucket mini', 'Bucket yang lebih kecil daripada biasanya dan bisa request', '/asset/buket11.jpg   ')">Details</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Daftar -->
+<div class="row" id="daftar">
+    <h1 style="font-size: 2rem;">
+      Our Clients<br />
+   </h1>
+    <!-- <div class="column">
+      <h3>Founder La'Fleuer</h3>
+      <img width="100px" height="100px" src="asset/kk.png">
+    </div> -->
+    <div class="column">
+      <h3>La'Fleuer Store</h3>
+      <img  width="80px" height="80px" src="asset/logo1000.png">
+    </div>
+    <div class="column">
+      <h3>Universitas Kanjuruhan Malang</h3>
+      <img  width="80px" height="80px" src="asset/logokj.png">
+    </div>
+  </div>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Explore and get to know us better!</p>
+    <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.9057054292093!2d112.61959467495907!3d-8.00866049201745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd627f8dad9a737%3A0x9d62e493f7309a73!2sJl.%20Simpang%20Kepuh%20No.22%2C%20Bandungrejosari%2C%20Kec.%20Sukun%2C%20Kota%20Malang%2C%20Jawa%20Timur%2065148!5e0!3m2!1sid!2sid!4v1705911071297!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form action="checkMassage.html">
+            <div class="input-group">
+                <box-icon name="user-circle" size="md" animation="tada-hover" color="white"></box-icon>
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="input-group">
+                <box-icon type="logo" name="gmail" size="md" animation="tada-hover" color="white"></box-icon>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <box-icon name='message-square-dots' size="md" animation="tada-hover" color="white"></box-icon>
+                <input type="text" placeholder="Your Massage" required>
+            </div>
+            <div class="input-group">
+                <box-icon name="phone" size="md" animation="tada-hover" color="white"></box-icon>
+                <input type="number" placeholder="Phone Number" required>
+            </div>
+            <a style="text-decoration: none;" class="btn" href="mailto:yanuarandriansah41@smk.belajar.id">Send</a>
+        </form>
+    </div>
+</section>
+ <!-- Footer -->
+ <div class="footer">
+    <div class="container">
+      <div class="box-footer">
+        <div class="box">
+        </div>
+        <div class="box-copy">
+          <p>&copy; Copyright by <span>Widyagama Development Team</span> All Rights Reserved 2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <!-- Daftar -->
+<script src="/script.js"></script>
+</body>
+</html>
